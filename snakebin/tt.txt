@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "snakebin.py", line 142, in <module>
+    get()
+  File "snakebin.py", line 104, in get
+    file_name, search = re.match('.*/snakebin-api/?(\w+)?(/search)?', path_info).groups()
+NameError: global name 're' is not defined

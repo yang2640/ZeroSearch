@@ -1,0 +1,143 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Aat	sift.cpp	822;"	d	file:
+CC	Makefile	/^CC=x86_64-nacl-g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-I. -Wall -g -O3 -DNDEBUG -DVL_LOWE_STRICT  -DVL_USEFASTMATH$/;"	m
+CHECK_NEIGHBORS	sift.cpp	739;"	d	file:
+Detail	sift.cpp	/^namespace Detail {$/;"	n	namespace:VL	file:
+Exception	sift.hpp	/^  Exception(std::string _msg) : msg(_msg) { }$/;"	f	struct:VL::Exception
+Exception	sift.hpp	/^ Exception$/;"	s	namespace:VL
+Keypoint	sift.hpp	/^  struct Keypoint$/;"	s	class:VL::Sift
+Keypoints	sift-driver.cpp	/^typedef vector<pair<VL::Sift::Keypoint,VL::float_t> > Keypoints ;$/;"	t	file:
+Keypoints	sift.hpp	/^  typedef std::vector<Keypoint>     Keypoints ;          \/\/\/< Keypoint list datatype$/;"	t	class:VL::Sift
+KeypointsConstIter	sift.hpp	/^  typedef Keypoints::const_iterator KeypointsConstIter ; \/\/\/< Keypoint list const iter datatype$/;"	t	class:VL::Sift
+KeypointsIter	sift.hpp	/^  typedef Keypoints::iterator       KeypointsIter ;      \/\/\/< Keypoint list iter datatype$/;"	t	class:VL::Sift
+O	sift.hpp	/^  int O ;$/;"	m	class:VL::Sift
+PgmBuffer	sift.hpp	/^struct PgmBuffer$/;"	s	namespace:VL
+RAW_CONST_PT	sift-driver.cpp	84;"	d	file:
+RAW_PT	sift-driver.cpp	85;"	d	file:
+S	sift.hpp	/^  int S ; $/;"	m	class:VL::Sift
+Sift	sift.cpp	/^Sift::Sift(const pixel_t* _im_pt, int _width, int _height,$/;"	f	class:VL::Sift
+Sift	sift.hpp	/^  Sift(const pixel_t* _im_pt, int _width, int _height,$/;"	p	class:VL::Sift
+Sift	sift.hpp	/^class Sift$/;"	c	namespace:VL
+VL	sift.cpp	/^namespace VL { $/;"	n	file:
+VL	sift.cpp	/^namespace VL {$/;"	n	file:
+VL	sift.hpp	/^namespace VL {$/;"	n
+VL_EXPAND_AND_STRINGIFY	sift.hpp	63;"	d
+VL_FASTFLOAT	sift.hpp	54;"	d
+VL_FASTFLOAT	sift.hpp	56;"	d
+VL_FASTFLOAT	sift.hpp	59;"	d
+VL_SIFT_HPP	sift.hpp	44;"	d
+VL_THROW	sift.hpp	138;"	d
+VL_XEAS	sift.hpp	62;"	d
+_buildExpnTable	sift.cpp	/^} _buildExpnTable ;$/;"	m	namespace:VL::Detail	typeref:struct:VL::Detail::buildExpnTable	file:
+_cmnt	sift.cpp	/^class _cmnt {} cmnt ;$/;"	c	namespace:VL::Detail	file:
+at	sift.cpp	1102;"	d	file:
+at	sift.cpp	1103;"	d	file:
+at	sift.cpp	821;"	d	file:
+atd	sift.cpp	1304;"	d	file:
+buildExpnTable	sift.cpp	/^  buildExpnTable() {$/;"	f	struct:VL::Detail::buildExpnTable
+buildExpnTable	sift.cpp	/^struct buildExpnTable$/;"	s	namespace:VL::Detail	file:
+ciIsEqual	sift-driver.cpp	/^bool ciIsEqual(char a, char b)$/;"	f
+cmnt	sift.cpp	/^class _cmnt {} cmnt ;$/;"	m	namespace:VL::Detail	typeref:class:VL::Detail::_cmnt	file:
+cmpKeypoints	sift-driver.cpp	/^bool cmpKeypoints (Keypoints::value_type const&a,$/;"	f
+computeKeypointDescriptor	sift.cpp	/^Sift::computeKeypointDescriptor$/;"	f	class:VL::Sift
+computeKeypointDescriptor	sift.hpp	/^  void computeKeypointDescriptor(VL::float_t* descr_pt, Keypoint keypoint, VL::float_t angle) ;$/;"	p	class:VL::Sift
+computeKeypointOrientations	sift.cpp	/^Sift::computeKeypointOrientations(VL::float_t angles [4], Keypoint keypoint)$/;"	f	class:VL::Sift
+computeKeypointOrientations	sift.hpp	/^  int computeKeypointOrientations(VL::float_t angles [4], Keypoint keypoint) ; $/;"	p	class:VL::Sift
+copy	sift.cpp	/^copy(pixel_t* dst, pixel_t const* src, int width, int height)$/;"	f	namespace:VL::Detail
+copyAndDownsample	sift.cpp	/^copyAndDownsample(pixel_t* dst, pixel_t const* src, $/;"	f	namespace:VL::Detail
+copyAndUpsampleRows	sift.cpp	/^copyAndUpsampleRows$/;"	f	namespace:VL::Detail
+data	sift.hpp	/^  pixel_t* data ; \/\/\/< Image data$/;"	m	struct:VL::PgmBuffer
+detectKeypoints	sift.cpp	/^Sift::detectKeypoints(VL::float_t threshold, VL::float_t edgeThreshold)$/;"	f	class:VL::Sift
+detectKeypoints	sift.hpp	/^  void detectKeypoints(VL::float_t threshold, VL::float_t edgeThreshold) ;$/;"	p	class:VL::Sift
+expnTable	sift.cpp	/^VL::float_t       expnTable [ expnTableSize + 1 ] ;$/;"	m	namespace:VL::Detail	file:
+expnTableMax	sift.cpp	/^VL::float_t const expnTableMax  = VL::float_t(25.0) ;$/;"	m	class:VL::Detail::VL	file:
+expnTableSize	sift.cpp	/^int const         expnTableSize = 256 ;$/;"	m	namespace:VL::Detail	file:
+extractPgm	sift.cpp	/^extractPgm(std::istream& in, PgmBuffer& buffer)$/;"	f	namespace:VL
+extractPgm	sift.hpp	/^std::istream& extractPgm(std::istream&, PgmBuffer& buffer) ;$/;"	p	namespace:VL
+fast_abs	sift.hpp	/^float_t fast_abs(float_t x) ;$/;"	p	namespace:VL
+fast_atan2	sift.hpp	/^float_t fast_atan2(float_t y, float_t x) ;$/;"	p	namespace:VL
+fast_expn	sift.hpp	/^float_t fast_expn(float_t x) ;$/;"	p	namespace:VL
+fast_floor	sift.hpp	/^int32_t fast_floor(float_t x) ;$/;"	p	namespace:VL
+fast_mod_2pi	sift.hpp	/^float_t fast_mod_2pi(float_t x) ;$/;"	p	namespace:VL
+fast_resqrt	sift.hpp	/^double  fast_resqrt(double x) ;$/;"	p	namespace:VL
+fast_resqrt	sift.hpp	/^float   fast_resqrt(float x) ;$/;"	p	namespace:VL
+fast_sqrt	sift.hpp	/^float_t fast_sqrt(float_t x) ;$/;"	p	namespace:VL
+filter	sift.hpp	/^  VL::pixel_t*  filter ;$/;"	m	class:VL::Sift
+filterReserved	sift.hpp	/^  int           filterReserved ;$/;"	m	class:VL::Sift
+float32_t	sift.hpp	/^typedef float float32_t ;$/;"	t	namespace:VL
+float64_t	sift.hpp	/^typedef double float64_t ;$/;"	t	namespace:VL
+float_t	sift.hpp	/^typedef VL_FASTFLOAT float_t ;$/;"	t	namespace:VL
+freeBuffers	sift.cpp	/^freeBuffers()$/;"	f	class:VL::Sift
+freeBuffers	sift.hpp	/^  void freeBuffers() ;$/;"	p	class:VL::Sift
+getHeight	sift.hpp	/^  int          getHeight() const ;$/;"	p	class:VL::Sift
+getKeypoint	sift.cpp	/^Sift::getKeypoint(VL::float_t x, VL::float_t y, VL::float_t sigma) const$/;"	f	class:VL::Sift
+getKeypoint	sift.hpp	/^  Keypoint     getKeypoint(VL::float_t x, VL::float_t y, VL::float_t s) const ;$/;"	p	class:VL::Sift
+getLevel	sift.hpp	/^  VL::pixel_t* getLevel(int o, int s) ;$/;"	p	class:VL::Sift
+getMagnification	sift.hpp	/^  VL::float_t getMagnification() const ;  $/;"	p	class:VL::Sift
+getNormalizeDescriptor	sift.hpp	/^  bool getNormalizeDescriptor() const ;$/;"	p	class:VL::Sift
+getOctave	sift.hpp	/^  VL::pixel_t* getOctave(int o) ;$/;"	p	class:VL::Sift
+getOctaveHeight	sift.hpp	/^  int          getOctaveHeight(int o) const ;$/;"	p	class:VL::Sift
+getOctaveSamplingPeriod	sift.hpp	/^  VL::float_t  getOctaveSamplingPeriod(int o) const ;$/;"	p	class:VL::Sift
+getOctaveWidth	sift.hpp	/^  int          getOctaveWidth(int o) const ;$/;"	p	class:VL::Sift
+getScaleFromIndex	sift.hpp	/^  VL::float_t  getScaleFromIndex(VL::float_t o, VL::float_t s) const ;$/;"	p	class:VL::Sift
+getWidth	sift.hpp	/^  int          getWidth() const ;$/;"	p	class:VL::Sift
+height	sift.hpp	/^  int height ;    \/\/\/< Image hegith$/;"	m	struct:VL::PgmBuffer
+height	sift.hpp	/^  int height ;$/;"	m	class:VL::Sift
+insertDescriptor	sift-driver.cpp	/^insertDescriptor(std::ostream& os,$/;"	f
+insertPgm	sift.cpp	/^insertPgm(std::ostream& os, pixel_t const* im, int width, int height)$/;"	f	namespace:VL
+insertPgm	sift.hpp	/^std::ostream& insertPgm(std::ostream&, pixel_t const* im, int width, int height) ;$/;"	p	namespace:VL
+int32_t	sift.hpp	/^typedef int int32_t ;$/;"	t	namespace:VL
+int64_t	sift.hpp	/^typedef long long int int64_t ;$/;"	t	namespace:VL
+is	sift.hpp	/^    int is ;   \/\/\/< Keypoint integer scale indiex$/;"	m	struct:VL::Sift::Keypoint
+ix	sift.hpp	/^    int ix ;   \/\/\/< Keypoint integer X coordinate (unnormalized)$/;"	m	struct:VL::Sift::Keypoint
+iy	sift.hpp	/^    int iy ;   \/\/\/< Keypoint integer Y coordinate (unnormalized)$/;"	m	struct:VL::Sift::Keypoint
+keypoints	sift.hpp	/^  Keypoints keypoints ;  $/;"	m	class:VL::Sift
+keypointsBegin	sift.hpp	/^  KeypointsIter keypointsBegin() ;$/;"	p	class:VL::Sift
+keypointsEnd	sift.hpp	/^  KeypointsIter keypointsEnd() ;$/;"	p	class:VL::Sift
+magnif	sift.hpp	/^  VL::float_t magnif ;$/;"	m	class:VL::Sift
+main	sift-driver.cpp	/^main(int argc, char** argv)$/;"	f
+msg	sift.hpp	/^  std::string msg ; $/;"	m	struct:VL::Exception
+normalizeDescriptor	sift.hpp	/^  bool        normalizeDescriptor ;$/;"	m	class:VL::Sift
+normalize_histogram	sift.cpp	/^normalize_histogram(VL::float_t* L_begin, VL::float_t* L_end)$/;"	f	namespace:VL::Detail
+not_found	sift-driver.cpp	/^size_t const not_found = numeric_limits<size_t>::max() - 1 ;$/;"	v
+o	sift.hpp	/^    int o ;    \/\/\/< Keypoint octave index$/;"	m	struct:VL::Sift::Keypoint
+octaves	sift.hpp	/^  VL::pixel_t** octaves ;$/;"	m	class:VL::Sift
+omin	sift.hpp	/^  int omin ;$/;"	m	class:VL::Sift
+operator >>	sift.cpp	/^operator>>(std::istream& is, _cmnt& manip)$/;"	f	namespace:VL::Detail
+pixel_t	sift.hpp	/^typedef float pixel_t ;$/;"	t	namespace:VL
+prepareBuffers	sift.cpp	/^prepareBuffers()$/;"	f	class:VL::Sift
+prepareBuffers	sift.hpp	/^  void prepareBuffers() ;$/;"	p	class:VL::Sift
+prepareGrad	sift.cpp	/^Sift::prepareGrad(int o)$/;"	f	class:VL::Sift
+prepareGrad	sift.hpp	/^  void prepareGrad(int o) ;$/;"	p	class:VL::Sift
+process	sift.cpp	/^process(const pixel_t* _im_pt, int _width, int _height)$/;"	f	class:VL::Sift
+process	sift.hpp	/^  void process(const pixel_t* _im_pt, int _width, int _height) ;$/;"	p	class:VL::Sift
+removeExtension	sift-driver.cpp	/^removeExtension(string name, string ext)$/;"	f
+s	sift.hpp	/^    float_t s ;   \/\/\/< Keypoint fractional scale index$/;"	m	struct:VL::Sift::Keypoint
+setMagnification	sift.hpp	/^  void setMagnification(VL::float_t) ;$/;"	p	class:VL::Sift
+setNormalizeDescriptor	sift.hpp	/^  void setNormalizeDescriptor(bool) ;$/;"	p	class:VL::Sift
+sigma	sift.hpp	/^    float_t sigma ;  \/\/\/< Keypoint scale$/;"	m	struct:VL::Sift::Keypoint
+sigma0	sift.hpp	/^  VL::float_t sigma0 ;$/;"	m	class:VL::Sift
+sigmak	sift.hpp	/^  VL::float_t sigmak ;$/;"	m	class:VL::Sift
+sigman	sift.hpp	/^  VL::float_t sigman ;$/;"	m	class:VL::Sift
+smax	sift.hpp	/^  int smax ;$/;"	m	class:VL::Sift
+smin	sift.hpp	/^  int smin ; $/;"	m	class:VL::Sift
+smooth	sift.cpp	/^Sift::smooth$/;"	f	class:VL::Sift
+smooth	sift.hpp	/^  void smooth(VL::pixel_t       * dst, $/;"	p	class:VL::Sift
+temp	sift.hpp	/^  VL::pixel_t*  temp ;$/;"	m	class:VL::Sift
+tempIsGrad	sift.hpp	/^  bool          tempIsGrad  ;$/;"	m	class:VL::Sift
+tempOctave	sift.hpp	/^  int           tempOctave ;$/;"	m	class:VL::Sift
+tempReserved	sift.hpp	/^  int           tempReserved ;$/;"	m	class:VL::Sift
+uint32_t	sift.hpp	/^typedef int uint32_t ;$/;"	t	namespace:VL
+uint8_t	sift.hpp	/^typedef char unsigned uint8_t ;$/;"	t	namespace:VL
+width	sift.hpp	/^  int width ;     \/\/\/< Image width$/;"	m	struct:VL::PgmBuffer
+width	sift.hpp	/^  int width ;$/;"	m	class:VL::Sift
+x	sift.hpp	/^    float_t x  ;  \/\/\/< Keypoint fractional X coordinate$/;"	m	struct:VL::Sift::Keypoint
+y	sift.hpp	/^    float_t y  ;  \/\/\/< Keypoint fractional Y coordinate$/;"	m	struct:VL::Sift::Keypoint
+~Sift	sift.cpp	/^Sift::~Sift()$/;"	f	class:VL::Sift
+~Sift	sift.hpp	/^  ~Sift() ;$/;"	p	class:VL::Sift

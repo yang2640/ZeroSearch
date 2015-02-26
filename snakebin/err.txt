@@ -1,0 +1,5 @@
+[VocabMatch] Using tree vocab.db
+[VocabMatch] Using distance Min
+[VocabMatch] Reading tree...
+  Next id: 999934 == 999934 + 1
+[VocabMatch] Read 10200 database images

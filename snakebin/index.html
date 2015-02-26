@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Search on ZeroCloud</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/4.6.0/codemirror.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/4.6.0/codemirror.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            // Called when a script posting is successful.
+            var searchSuccess = function(data, textStatus, jqXHR) {
+		var urls = jqXHR.responseText.split(',');
+		var results = '';
+		for (var i = 0; i < urls.length; i++) {
+		    var name = urls[i].trim() + '.jpg';
+		    var url = urls[i].trim();
+		    // results += '<img src="' + url + '"/>';
+		    results += '<a href="' + url + '">' + name + '</a><br />';
+		}
+		$('#search-results').html(results);
+		$('#search-results').css('visibility', 'visible');
+            };
+
+
+	    // Attach search funcionality to the "Search" button
+	    $('#search').click(function() {
+		var searchTerm = encodeURIComponent($('#search-text').val());
+		var searchUrl = (window.location.href.split('snakebin-api')[0]
+				+ 'snakebin-api/' + searchTerm + '/search');
+		var request = {
+		    url: searchUrl,
+		    dataType: 'text',
+		    type: 'GET',
+		    success: searchSuccess
+		};
+		$.ajax(request);
+	    });
+        });
+    </script>
+  </head>
+  <body>
+    <br />
+	Image Search on ZeroCloud. Input search term to the search box, the allowed search term is ukbenchxxxxx (xxxxx is from 00000 to 10200).
+    <br />
+    <p>
+	<input id="search-text" type="input">
+	<input id="search" type="submit" value="Search">
+	<div id="search-results" style="visibility: hidden;"></div>
+    </p>
+  </body>
+</html>
